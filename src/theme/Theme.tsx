@@ -238,7 +238,7 @@ const Theme = {
   icons: {
     // not used
     splash_logo: require('../resources/images/splash.png'),
-    splash_background: require('../resources/images/splash_background.png'),
+    splash_background: require('../resources/images/splash-background.png'),
     parent_home: require('../resources/images/parent-home.png'),
     parent_home_active: require('../resources/images/parent-home-active.png'),
     parent_home_lessons_active: require('../resources/images/parent-home-lessons-active.png'),
@@ -255,6 +255,16 @@ const Theme = {
     tutor_students_active: require('../resources/images/tutor-students-active.png'),
     tutor_incidents: require('../resources/images/tutor-incidents.png'),
     tutor_incidents_active: require('../resources/images/tutor-incidents-active.png'),
+    more: require('../resources/images/more.png'),
+    more_active: require('../resources/images/more-active.png'),
+    home_lesson: require('../resources/images/home-lesson.png'),
+    home_lesson_active: require('../resources/images/home-lesson-active.png'),
+    home_tracking: require('../resources/images/home-tracking.png'),
+    home_tracking_active: require('../resources/images/home-tracking-active.png'),
+    lessons_calendar: require('../resources/images/lessons-calendar.png'),
+    lessons_calendar_active: require('../resources/images/lessons-calendar-active.png'),
+    lessons_lessons: require('../resources/images/lessons-lessons.png'),
+    lessons_lessons_active: require('../resources/images/lessons-lessons-active.png'),
   },
 };
 

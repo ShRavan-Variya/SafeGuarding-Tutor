@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
         left: 0,
         justifyContent: 'center',
         alignItems: 'center',
-        minWidth: Theme.responsiveSize.size80,
+        minWidth: Theme.responsiveSize.size85,
         height: Theme.responsiveSize.size45,
         marginLeft: -Theme.responsiveSize.size24, 
         marginTop: -Theme.responsiveSize.size10, 
@@ -17,6 +17,20 @@ export const styles = StyleSheet.create({
         paddingVertical: Theme.responsiveSize.size10, 
         borderRadius: Theme.responsiveSize.size40,
         elevation: Theme.responsiveSize.size2
+    },
+    top_image_wrapper:{
+        display:'flex', 
+        flexDirection:'row', 
+        minWidth: Theme.responsiveSize.size85,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center'
+    },
+    top_label:{
+        color:Theme.colors.appColorLight,
+        fontSize:Theme.responsiveSize.size14,
+        fontWeight:'600',
+        marginLeft: Theme.responsiveSize.size10
     },
     label:{
         color:Theme.colors.white,
