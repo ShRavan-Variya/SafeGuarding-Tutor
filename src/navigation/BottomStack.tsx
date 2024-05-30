@@ -16,13 +16,20 @@ function BottomStack() {
     <Tab.Navigator
       initialRouteName={Constants.TUTOR_HOME_SCREEN}
       activeColor={Theme.colors.appColorTutor}
+      style={{
+        backgroundColor:'white',
+        borderTopLeftRadius: Theme.responsiveSize.size30, 
+        borderTopRightRadius: Theme.responsiveSize.size30,
+      }}
       labeled={false}
       barStyle={{ 
         backgroundColor: Theme.colors.white,
         borderTopLeftRadius: Theme.responsiveSize.size30, 
         borderTopRightRadius: Theme.responsiveSize.size30,
         // position: 'absolute', 
-        overflow:'hidden',
+        borderWidth: 0.5,
+        borderColor: Theme.colors.appColorLight,
+        overflow: 'hidden',
         left: 0,
         right: 0,
       }}
