@@ -15,6 +15,7 @@ import { Provider as PaperProvider } from 'react-native-paper';
 import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import AuthStackNavigation from './src/navigation/AuthStackNavigation';
+import 'react-native-gesture-handler'
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';

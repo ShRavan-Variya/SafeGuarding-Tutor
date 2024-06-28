@@ -6,8 +6,7 @@ const styles = StyleSheet.create({
         borderRadius: Theme.responsiveSize.size10,
         backgroundColor: Theme.colors.planned_face,
         width: '100%',
-        padding: Theme.responsiveSize.size15,
-        marginTop: Theme.responsiveSize.size15
+        marginTop: Theme.responsiveSize.size15,
     },
     firstColumn:{
         alignItems: 'center',
@@ -49,6 +48,49 @@ const styles = StyleSheet.create({
     },
     mapImage:{
         width: '100%'
+    },
+    arriveButton:{
+        borderRadius: Theme.responsiveSize.size8,
+        backgroundColor: Theme.colors.appColorTutor,
+        paddingVertical: Theme.responsiveSize.size10,
+        paddingHorizontal: Theme.responsiveSize.size10,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '95%',
+        position: 'absolute',
+        alignSelf: 'center',
+        bottom: Theme.responsiveSize.size15
+    },
+    arriveButtonText:{
+        color: Theme.colors.white,
+        fontSize: Theme.responsiveSize.size16,
+        fontWeight: '600'
+    },
+    messageButton:{
+        borderRadius: Theme.responsiveSize.size8,
+        borderColor: Theme.colors.appColorTutor,
+        borderWidth: Theme.responsiveSize.size2,
+        paddingVertical: Theme.responsiveSize.size10,
+        paddingHorizontal: Theme.responsiveSize.size10,
+        marginTop: Theme.responsiveSize.size40,
+        display: 'flex',
+        flexDirection: 'row',
+        gap: Theme.responsiveSize.size8,
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '95%',
+        alignSelf: 'center',
+        bottom: Theme.responsiveSize.size20
+    },
+    messageButtonText:{
+        color: Theme.colors.appColorTutor,
+        fontSize: Theme.responsiveSize.size16,
+        fontWeight: '600',
+    },
+    messageButtonImage:{
+        width: Theme.responsiveSize.size22,
+        height: Theme.responsiveSize.size22,
     }
 });
 

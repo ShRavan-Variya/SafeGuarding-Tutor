@@ -30,6 +30,8 @@ build/
 local.properties
 *.iml
 *.hprof
+build.gradle
+gradle/wrapper/gradle-wrapper.properties
 .cxx/
 *.keystore
 !debug.keystore

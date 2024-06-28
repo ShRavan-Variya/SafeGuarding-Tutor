@@ -8,10 +8,11 @@ interface props {
   startingIn:string;
   startTime:string;
   endTime:string;
+  duration:string
 }
 const LessonTimeBox = (props:props) => {
   return (
-    <View style={[styles.container, styles.row]}>
+    <View style={[styles.container, styles.row, {padding: Theme.responsiveSize.size15}]}>
       <View style={styles.firstColumn}>
         <Image style={styles.timmerImage} source={Theme.icons.timer} />
       </View>
@@ -25,7 +26,7 @@ const LessonTimeBox = (props:props) => {
         <View style={styles.row}>
           <Text style={styles.subText}>{props.startTime+" - "+props.endTime}</Text>
           <View style={styles.separator}/>
-          <Text style={styles.subText}>{'2 hours'}</Text>
+          <Text style={styles.subText}>{props.duration}</Text>
         </View>
       </View>
     </View>

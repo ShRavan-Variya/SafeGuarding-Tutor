@@ -4,10 +4,16 @@ import { Image, Text, View } from 'react-native';
 import { Constants } from '../utils';
 import Theme from '../theme/Theme';
 import { styles } from './styles';
-import HomeScreen from '../screens/home/HomeScreen';
 import HomeTabNavigation from './HomeTabNavigation';
 import LessonTabNavigation from './LessonTabNavigation';
+import Incidents from '../screens/incidents/Incidents';
+import ProfileScreen from '../screens/more/ProfileScreen';
+import NotificationsScreen from '../screens/more/NotificationsScreen';
+import SendIncident from '../screens/home/incident/SendIncident';
+import IncidentSent from '../screens/home/incident/IncidentSent';
+import EndedLesson from '../screens/home/lesson/EndedLesson';
 import Students from '../screens/students/Students';
+import { white } from 'react-native-paper/lib/typescript/styles/themes/v2/colors';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -18,18 +24,21 @@ function BottomStack() {
       activeColor={Theme.colors.appColorTutor}
       style={{
         backgroundColor:'white',
-        borderTopLeftRadius: Theme.responsiveSize.size30, 
-        borderTopRightRadius: Theme.responsiveSize.size30,
+        // borderTopLeftRadius: Theme.responsiveSize.size30, 
+        // borderTopRightRadius: Theme.responsiveSize.size30,
       }}
       labeled={false}
+      shifting={false}
       barStyle={{ 
         backgroundColor: Theme.colors.white,
         borderTopLeftRadius: Theme.responsiveSize.size30, 
         borderTopRightRadius: Theme.responsiveSize.size30,
-        // position: 'absolute', 
+        height: Theme.responsiveSize.size75,
+        position: 'absolute', 
         borderWidth: 0.5,
         borderColor: Theme.colors.appColorLight,
-        overflow: 'hidden',
+        overflow:'hidden',
+        paddingHorizontal: Theme.responsiveSize.size15,
         left: 0,
         right: 0,
       }}
@@ -39,6 +48,7 @@ function BottomStack() {
         component={HomeTabNavigation}
         options={{
           tabBarLabel: 'Home',
+          tabBarColor:'green',
           tabBarIcon: ({ color, focused }) => (
             <>
                 {focused?
@@ -51,9 +61,9 @@ function BottomStack() {
                       style={styles.image}
                       resizeMode="contain"
                       />
-                      <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size12}}>{'Home'}</Text>
+                      <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size10}}>{'Home'}</Text>
                     </View>
-                    :
+                  :
                     <Image
                     source={Theme.icons.parent_home}
                     style={{width:22, height:22}}
@@ -73,15 +83,15 @@ function BottomStack() {
             <>
                 {focused?
                     <View style={[
-                        styles.image_wrapper,
-                        {backgroundColor:color}
-                        ]}>
-                        <Image
-                        source={Theme.icons.tutor_students_active}
-                        style={styles.image}
-                        resizeMode="contain"
-                        />
-                        <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size12}}>{'Students'}</Text>
+                      styles.image_wrapper,
+                      {backgroundColor:color}
+                      ]}>
+                      <Image
+                      source={Theme.icons.tutor_students_active}
+                      style={styles.image}
+                      resizeMode="contain"
+                      />
+                      <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size10}}>{'Students'}</Text>
                     </View>
                     :
                     <Image
@@ -111,7 +121,7 @@ function BottomStack() {
                         style={styles.image}
                         resizeMode="contain"
                         />
-                        <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size12}}>{'Lessons'}</Text>
+                        <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size10}}>{'Lessons'}</Text>
                     </View>
                     :
                     <Image
@@ -126,7 +136,7 @@ function BottomStack() {
        />
        <Tab.Screen
         name={Constants.TUTOR_INCIDENTS_SCREEN}
-        component={HomeScreen}
+        component={Incidents}
         options={{
           tabBarLabel: 'Incidents',
           tabBarIcon: ({ color, focused }) => (
@@ -141,7 +151,7 @@ function BottomStack() {
                         style={{width:18, height:18, marginRight:3}}
                         resizeMode="contain"
                         />
-                        <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size12}}>{'Incidents'}</Text>
+                        <Text style={{color:Theme.colors.white, fontSize:Theme.responsiveSize.size10}}>{'Incidents'}</Text>
                     </View>
                     :
                     <Image
@@ -156,7 +166,7 @@ function BottomStack() {
        />
        <Tab.Screen
         name={Constants.TUTOR_MORE_SCREEN}
-        component={HomeScreen}
+        component={ProfileScreen}
         options={{
           tabBarLabel: 'More',
           tabBarIcon: ({ color, focused }) => (

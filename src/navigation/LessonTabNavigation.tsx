@@ -13,6 +13,8 @@ import { Constants } from '../utils';
 import HomeLesson from '../screens/home/HomeLesson';
 import HomeTracking from '../screens/home/HomeTracking';
 import { styles } from './styles';
+import LessonScreen from '../screens/lessons/LessonScreen';
+import CalendarScreen from '../screens/lessons/CalendarScreen';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -36,7 +38,7 @@ const LessonTabNavigation = (props: any) => {
           })}>
           <Tab.Screen
             name={Constants.TUTOR_LESSONS_CALENDAR_SCREEN}
-            component={HomeLesson}
+            component={CalendarScreen}
             options={{
                 title: 'Calendar',
                 tabBarIcon:({ color, focused }) => (
@@ -71,7 +73,7 @@ const LessonTabNavigation = (props: any) => {
 
           <Tab.Screen
             name={Constants.TUTOR_LESSONS_LESSONS_SCREEN}
-            component={HomeTracking}
+            component={LessonScreen}
             options={{
                 title: 'Tracking',
                 tabBarIcon:({ color, focused }) => (

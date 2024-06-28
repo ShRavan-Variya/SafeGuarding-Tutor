@@ -7,23 +7,28 @@ const Theme = {
     appColorParent: '#1D9A7A',
     appColorLight: '#A3A4A9',
     inputBackground: '#EAEAEA',
-    notAttended: '#6E3B8F',           //Calendar
-    delivered_approved: '#02A9DD',    //Calendar
-    pending: '#FF8A00',               //Calendar
-    planned_online: '##2DA98A',       //Calendar
-    planned_face: '#FFCE3A',          //Calendar
-    red_notification: '#F72020',      
-    disabled: '#BFBFBF',          
+    notAttended: '#6E3B8F', //Calendar
+    delivered_approved: '#02A9DD', //Calendar
+    pending: '#FF8A00', //Calendar
+    planned_online: '#2DA98A', //Calendar
+    planned_face: '#FFCE3A', //Calendar
+    red_notification: '#F72020',
+    disabled: '#BFBFBF',
     white: '#FFFFFF',
     black: '#000000',
     transparent: 'transparent',
-
+    placeholderColor: '#C4C4C4',
 
     bgColor1: '#1525A3',
     bgColor2: '#FFFFFF',
     bgHeading1: '#F8F1DD',
     bgHeading2: '#DDF1EC',
-  
+
+    sheetMessageColor: '#E6F5F1',
+    bgColor35: '#F8F1DD',
+    bgColor36: '#DDF1EC',
+    bgColor37: '#FFDDDD',
+
     // transparency colors
     transColor1: '#ffffff7a',
 
@@ -31,7 +36,8 @@ const Theme = {
     textColor2: '#000000',
     textColor3: '#1525A3',
     textColor4: '#656565',
-    
+    textColor29: '#03192C',
+    textColor30: '#02A9DD',
   },
   fontFamily: {
     // Poppins
@@ -123,9 +129,13 @@ const Theme = {
     size170: RFValue(170),
     size177: RFValue(177),
     size180: RFValue(180),
+    size190: RFValue(190),
     size200: RFValue(200),
+    size210: RFValue(210),
+
     size220: RFValue(220),
     size230: RFValue(230),
+    size240: RFValue(240),
     size250: RFValue(250),
     size255: RFValue(255),
     size260: RFValue(260),
@@ -162,12 +172,35 @@ const Theme = {
     home_tracking: require('../resources/images/home-tracking.png'),
     home_tracking_active: require('../resources/images/home-tracking-active.png'),
     timer: require('../resources/images/timer.png'),
+    send_message: require('../resources/images/send-message.png'),
     navigation: require('../resources/images/navigation.png'),
     map: require('../resources/images/map.png'),
+    sos: require('../resources/images/sos.png'),
+    student_arrive: require('../resources/images/student-arrive.png'),
+    add_incident: require('../resources/images/add-incident.png'),
+    end_lesson: require('../resources/images/end-lesson.png'),
     lessons_calendar: require('../resources/images/lessons-calendar.png'),
     lessons_calendar_active: require('../resources/images/lessons-calendar-active.png'),
     lessons_lessons: require('../resources/images/lessons-lessons.png'),
     lessons_lessons_active: require('../resources/images/lessons-lessons-active.png'),
+    Child1: require('../resources/images/Child1.png'),
+    Child2: require('../resources/images/Child2.png'),
+    Child3: require('../resources/images/Child3.png'),
+    tutor_calendar: require('../resources/images/tutor-Calendar.png'),
+    tutor_Clock: require('../resources/images/tutor-Clock.png'),
+    tutor_Location: require('../resources/images/tutor-Location.png'),
+    NextBtn: require('../resources/images/NextBtn.png'),
+    red_Clock: require('../resources/images/redClock.png'),
+    tick: require('../resources/images/tick.png'),
+    edit_Pencil: require('../resources/images/editPencil.png'),
+    notification: require('../resources/images/notification.png'),
+    profileTraining: require('../resources/images/profileTraining.png'),
+    goBack: require('../resources/images/goBack.png'),
+    upCommingNotification: require('../resources/images/upComingNotification.png'),
+    time_Duration: require('../resources/images/timeDuration.png'),
+    lesson_Icon: require('../resources/images/lessonIcon.png'),
+    target_Loaction:require('../resources/images/targetLoaction.png'),
+    default:require('../resources/images/default.png')
   },
 };
 

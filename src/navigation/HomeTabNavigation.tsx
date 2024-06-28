@@ -38,7 +38,7 @@ const HomeTabNavigation = (props: any) => {
             name={Constants.TUTOR_HOME_LESSON_SCREEN}
             component={HomeLesson}
             options={{
-                title: 'Lessons',
+                title: 'Lesson',
                 tabBarIcon:({ color, focused }) => (
                     <>
                       {focused?
@@ -50,7 +50,7 @@ const HomeTabNavigation = (props: any) => {
                                 style={{width:22, height:22}}
                                 resizeMode="contain"
                                 />
-                                <Text style={[styles.top_label, {color:color}]}>{'Lessons'}</Text>
+                                <Text style={[styles.top_label, {color:color}]}>{'Lesson'}</Text>
                             </View>
                           :
                             <View style={[
@@ -61,7 +61,7 @@ const HomeTabNavigation = (props: any) => {
                                 style={{width:22, height:22}}
                                 resizeMode="contain"
                                 />
-                                <Text style={styles.top_label}>{'Lessons'}</Text>
+                                <Text style={styles.top_label}>{'Lesson'}</Text>
                             </View>
                       }
                   </>
